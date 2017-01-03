@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		9808711E1E1B857000FE43DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9808711D1E1B857000FE43DA /* main.m */; };
 		980871211E1B857000FE43DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 980871201E1B857000FE43DA /* AppDelegate.m */; };
-		980871241E1B857000FE43DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980871231E1B857000FE43DA /* ViewController.m */; };
 		980871271E1B857000FE43DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980871251E1B857000FE43DA /* Main.storyboard */; };
 		980871291E1B857000FE43DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980871281E1B857000FE43DA /* Assets.xcassets */; };
 		9808712C1E1B857000FE43DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9808712A1E1B857000FE43DA /* LaunchScreen.storyboard */; };
 		980871371E1B857000FE43DA /* xhcfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 980871361E1B857000FE43DA /* xhcfTests.m */; };
 		980871421E1B857000FE43DA /* xhcfUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 980871411E1B857000FE43DA /* xhcfUITests.m */; };
+		980871511E1B88AE00FE43DA /* NotifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980871501E1B88AE00FE43DA /* NotifyViewController.m */; };
+		980871571E1B94E500FE43DA /* XHCFTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 980871561E1B94E500FE43DA /* XHCFTitleButton.m */; };
+		9808715A1E1B993600FE43DA /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 980871591E1B993600FE43DA /* UIView+Frame.m */; };
+		9808715D1E1BA0D200FE43DA /* ProductNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9808715C1E1BA0D200FE43DA /* ProductNewsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +42,6 @@
 		9808711D1E1B857000FE43DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9808711F1E1B857000FE43DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		980871201E1B857000FE43DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		980871221E1B857000FE43DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		980871231E1B857000FE43DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		980871261E1B857000FE43DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		980871281E1B857000FE43DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9808712B1E1B857000FE43DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,14 @@
 		9808713D1E1B857000FE43DA /* xhcfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xhcfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		980871411E1B857000FE43DA /* xhcfUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xhcfUITests.m; sourceTree = "<group>"; };
 		980871431E1B857000FE43DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9808714F1E1B88AE00FE43DA /* NotifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyViewController.h; sourceTree = "<group>"; };
+		980871501E1B88AE00FE43DA /* NotifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyViewController.m; sourceTree = "<group>"; };
+		980871551E1B94E500FE43DA /* XHCFTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHCFTitleButton.h; sourceTree = "<group>"; };
+		980871561E1B94E500FE43DA /* XHCFTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHCFTitleButton.m; sourceTree = "<group>"; };
+		980871581E1B993600FE43DA /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		980871591E1B993600FE43DA /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		9808715B1E1BA0D200FE43DA /* ProductNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductNewsViewController.h; sourceTree = "<group>"; };
+		9808715C1E1BA0D200FE43DA /* ProductNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductNewsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +112,14 @@
 			children = (
 				9808711F1E1B857000FE43DA /* AppDelegate.h */,
 				980871201E1B857000FE43DA /* AppDelegate.m */,
-				980871221E1B857000FE43DA /* ViewController.h */,
-				980871231E1B857000FE43DA /* ViewController.m */,
+				980871581E1B993600FE43DA /* UIView+Frame.h */,
+				980871591E1B993600FE43DA /* UIView+Frame.m */,
+				9808714F1E1B88AE00FE43DA /* NotifyViewController.h */,
+				980871501E1B88AE00FE43DA /* NotifyViewController.m */,
+				980871551E1B94E500FE43DA /* XHCFTitleButton.h */,
+				980871561E1B94E500FE43DA /* XHCFTitleButton.m */,
+				9808715B1E1BA0D200FE43DA /* ProductNewsViewController.h */,
+				9808715C1E1BA0D200FE43DA /* ProductNewsViewController.m */,
 				980871251E1B857000FE43DA /* Main.storyboard */,
 				980871281E1B857000FE43DA /* Assets.xcassets */,
 				9808712A1E1B857000FE43DA /* LaunchScreen.storyboard */,
@@ -276,9 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				980871241E1B857000FE43DA /* ViewController.m in Sources */,
+				980871511E1B88AE00FE43DA /* NotifyViewController.m in Sources */,
 				980871211E1B857000FE43DA /* AppDelegate.m in Sources */,
 				9808711E1E1B857000FE43DA /* main.m in Sources */,
+				9808715D1E1BA0D200FE43DA /* ProductNewsViewController.m in Sources */,
+				9808715A1E1B993600FE43DA /* UIView+Frame.m in Sources */,
+				980871571E1B94E500FE43DA /* XHCFTitleButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

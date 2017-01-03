@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NotifyViewController.h
 //  xhcf
 //
 //  Created by 刘学 on 17/1/3.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface NotifyViewController : UIViewController
 
 @end
-
