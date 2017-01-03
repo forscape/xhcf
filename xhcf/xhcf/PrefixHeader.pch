@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  xhcf
+//
+//  Created by ethan on 17/1/4.
+//  Copyright © 2017年 Ethan. All rights reserved.
+//
+
+#ifndef PrefixHeader_h
+#define PrefixHeader_h
+
+
+//===========================================
+
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+//===========================================
+
+//Color
+#define kColor222               [UIColor colorWithHexString:@"0x222222"]
+#define kColor666               [UIColor colorWithHexString:@"0x666666"]
+#define kColor999               [UIColor colorWithHexString:@"0x999999"]
+#define kColorTableBG           [UIColor colorWithHexString:@"0xfafafa"]
+#define kColorTableSectionBG    [UIColor colorWithHexString:@"0xeeeeee"]
+#define kColorViewControllerBG  [UIColor colorWithHexString:@"0xf0f0f0"]
+#define kColorNavDefaultBG      [UIColor colorWithHexString:@"0x3f454f"]
+#define kColorCellLine          [UIColor colorWithHexString:@"0xe5e5e5"]
+
+
+#define kPaddingLeftWidth (15.0)
+
+#endif /* PrefixHeader_h */

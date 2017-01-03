@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81B37AE11E1C121900B0A5BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		980871191E1B857000FE43DA /* xhcf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xhcf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9808711D1E1B857000FE43DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9808711F1E1B857000FE43DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 				9808712A1E1B857000FE43DA /* LaunchScreen.storyboard */,
 				9808712D1E1B857000FE43DA /* Info.plist */,
 				9808711C1E1B857000FE43DA /* Supporting Files */,
+				81B37AE11E1C121900B0A5BE /* PrefixHeader.pch */,
 			);
 			path = xhcf;
 			sourceTree = "<group>";
@@ -222,7 +224,7 @@
 				TargetAttributes = {
 					980871181E1B857000FE43DA = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 9GJ37C6WXN;
+						DevelopmentTeam = BUVB58985G;
 						ProvisioningStyle = Automatic;
 					};
 					980871311E1B857000FE43DA = {
@@ -443,8 +445,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9GJ37C6WXN;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = BUVB58985G;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/xhcf/PrefixHeader.pch";
 				INFOPLIST_FILE = xhcf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = galaxy.xhcf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,8 +461,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9GJ37C6WXN;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = BUVB58985G;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/xhcf/PrefixHeader.pch";
 				INFOPLIST_FILE = xhcf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = galaxy.xhcf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +542,7 @@
 				980871481E1B857000FE43DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		980871491E1B857000FE43DA /* Build configuration list for PBXNativeTarget "xhcfTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +551,7 @@
 				9808714B1E1B857000FE43DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9808714C1E1B857000FE43DA /* Build configuration list for PBXNativeTarget "xhcfUITests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +560,7 @@
 				9808714E1E1B857000FE43DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
