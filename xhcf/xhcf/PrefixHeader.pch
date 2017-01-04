@@ -8,7 +8,7 @@
 
 #ifndef PrefixHeader_h
 #define PrefixHeader_h
-
+#import "UIColor+Hex.h"
 
 //===========================================
 
@@ -18,11 +18,11 @@
 //===========================================
 
 //Color
-#define kColor222               [UIColor colorWithHexString:@"0x222222"]
-#define kColor666               [UIColor colorWithHexString:@"0x666666"]
-#define kColor999               [UIColor colorWithHexString:@"0x999999"]
-#define kColorTableBG           [UIColor colorWithHexString:@"0xfafafa"]
-#define kColorTableSectionBG    [UIColor colorWithHexString:@"0xeeeeee"]
+#define kColor5622              [UIColor colorWithHexString:@"0xff5622"]
+#define kColor3333              [UIColor colorWithHexString:@"0x333333"]
+#define kColorfefe              [UIColor colorWithHexString:@"0xfefefe"]
+#define kColor9999              [UIColor colorWithHexString:@"0x999999"]
+#define kColordcdf              [UIColor colorWithHexString:@"0xDBDCDF"]
 #define kColorViewControllerBG  [UIColor colorWithHexString:@"0xf0f0f0"]
 #define kColorNavDefaultBG      [UIColor colorWithHexString:@"0x3f454f"]
 #define kColorCellLine          [UIColor colorWithHexString:@"0xe5e5e5"]

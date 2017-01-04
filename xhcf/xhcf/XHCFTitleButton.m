@@ -13,9 +13,9 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         self.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
-        [self setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
-        [self setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
-        [self setBackgroundImage:[self imageWithColor:[UIColor redColor]] forState:UIControlStateSelected];
+        [self setTitleColor:kColor3333 forState:UIControlStateNormal];
+        [self setTitleColor:kColorfefe forState:UIControlStateSelected];
+        [self setBackgroundImage:[self imageWithColor:kColor5622] forState:UIControlStateSelected];
     }
     return self;
 }

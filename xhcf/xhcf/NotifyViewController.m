@@ -11,6 +11,7 @@
 #import "ProductNewsViewController.h"
 #import "XHCFTitleButton.h"
 #import "UIView+Frame.h"
+#import "XHCFCoverView.h"
 
 @interface NotifyViewController ()
 @property (nonatomic, weak) UIView *titlesView;
@@ -33,6 +34,9 @@
     
     // 标题栏
     [self setupTitlesView];
+    
+    XHCFCoverView *coverView = [[XHCFCoverView alloc] initWithFrame:self.view.frame];
+    [coverView showView];
 }
 
 /**
@@ -85,19 +89,22 @@
  */
 - (void)setupTitleButtons
 {
+    UIView *containerView = [[UIView alloc] initWithFrame:CGRectMake(10, 10, self.titlesView.width - 20, self.titlesView.height - 20)];
+    containerView.backgroundColor = [UIColor whiteColor];
+    [self.titlesView addSubview:containerView];
     // 文字
     NSArray *titles = @[@"产品动态", @"站内信", @"课程动态", @"系统消息"];
     NSUInteger count = titles.count;
     
     // 标题按钮的尺寸
-    CGFloat titleButtonW = self.titlesView.width / count;
-    CGFloat titleButtonH = self.titlesView.height;
+    CGFloat titleButtonW = (self.titlesView.width - 20) / count;
+    CGFloat titleButtonH = (self.titlesView.height - 20);
     
     // 创建5个标题按钮
     for (NSUInteger i = 0; i < count; i++) {
         XHCFTitleButton *titleButton = [[XHCFTitleButton alloc] init];
         [titleButton addTarget:self action:@selector(titleButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-        [self.titlesView addSubview:titleButton];
+        [containerView addSubview:titleButton];
         // frame
         titleButton.frame = CGRectMake(i * titleButtonW, 0, titleButtonW, titleButtonH);
         // 文字
@@ -121,6 +128,7 @@
     UIView *titlesView = [[UIView alloc] init];
     titlesView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
     titlesView.frame = CGRectMake(0, 64, self.view.width, 60);
+    titlesView.backgroundColor =  kColordcdf;
     [self.view addSubview:titlesView];
     self.titlesView = titlesView;
     
@@ -128,71 +136,5 @@
     [self setupTitleButtons];
 }
 
-
-//- (void)setTitleView {
-//    UIView *titleView = [[UIView alloc] init];
-//    titleView.frame = CGRectMake(0, 64, kScreen_width, 60);
-////    titleView.backgroundColor = [UIColor grayColor];
-//    [self.view addSubview:titleView];
-//    self.titlesView = titleView;
-//    
-//    [self setTitleButtons];
-//}
-//
-//- (void)setTitleButtons {
-//    NSArray *titles = @[@"产品动态", @"站内信", @"课程动态", @"系统消息"];
-//    NSUInteger count = titles.count;
-//    
-//    CGFloat titleButtonW = kScreen_width / count;
-//    CGFloat titleButtonH = 60;
-//    
-//    for (NSUInteger i = 0; i < count; i++) {
-//        XHCFTitleButton *titleButton = [[XHCFTitleButton alloc] init];
-//        [titleButton addTarget:self action:@selector(titleButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-//        [self.titlesView addSubview:titleButton];
-//        titleButton.frame = CGRectMake(i * titleButtonW, 0, titleButtonW, titleButtonH);
-//        [titleButton setTitle:titles[i] forState:UIControlStateNormal];
-//    }
-//}
-//
-//- (void)titleButtonClick:(UIButton *)titleButton {
-//    
-//    self.previousClickedTitleButton.selected = NO;
-//    titleButton.selected = YES;
-//    self.previousClickedTitleButton = titleButton;
-//}
-//
-//- (void)setScrollView {
-//    
-//    // 不允许自动修改UIScrollView的内边距
-//    self.automaticallyAdjustsScrollViewInsets = NO;
-//    
-//    UIScrollView *scrollView = [[UIScrollView alloc] init];
-//    scrollView.backgroundColor = [UIColor blueColor];
-//    scrollView.frame = self.view.bounds;
-//    scrollView.showsHorizontalScrollIndicator = NO;
-//    scrollView.showsVerticalScrollIndicator = NO;
-//    scrollView.pagingEnabled = YES;
-//    [self.view addSubview:scrollView];
-//    
-//    NSUInteger count = self.childViewControllers.count;
-//    CGFloat scrollViewW = scrollView.width;
-//    CGFloat scrollViewH = scrollView.height;
-//    
-//    for (NSUInteger i = 0; i < count; i++) {
-//        UIView *childVCView = self.childViewControllers[i].view;
-//        childVCView.frame = CGRectMake(i * scrollViewW, 0, scrollViewW, scrollViewH);
-//        [scrollView addSubview:childVCView];
-//    }
-//    scrollView.contentSize = CGSizeMake(count * scrollViewW, 0);
-//}
-//
-//- (void)setAllChildsVCs {
-//    [self addChildViewController:[[ProductNewsViewController alloc] init]];
-//    [self addChildViewController:[[ProductNewsViewController alloc] init]];
-//    [self addChildViewController:[[ProductNewsViewController alloc] init]];
-//    [self addChildViewController:[[ProductNewsViewController alloc] init]];
-//
-//}
 
 @end
