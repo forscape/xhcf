@@ -12,6 +12,7 @@
 #import "XHCFTitleButton.h"
 #import "UIView+Frame.h"
 #import "XHCFCoverView.h"
+#import "PlayViewController.h"
 
 @interface NotifyViewController ()
 @property (nonatomic, weak) UIView *titlesView;
@@ -36,6 +37,9 @@
     [self setupTitlesView];
     
     XHCFCoverView *coverView = [[XHCFCoverView alloc] initWithFrame:self.view.frame];
+    coverView.playVideoBlock = ^(UIButton *button){
+        [self playVideoButtonClick:button];
+    };
     [coverView showView];
 }
 
@@ -136,5 +140,10 @@
     [self setupTitleButtons];
 }
 
+- (void)playVideoButtonClick:(UIButton *)button {
+    NSLog(@"hit me");
+    PlayViewController *playVC = [[PlayViewController alloc] init];
+    [self.navigationController pushViewController:playVC animated:NO];
+}
 
 @end

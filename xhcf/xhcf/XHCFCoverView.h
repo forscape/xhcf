@@ -10,6 +10,8 @@
 
 @interface XHCFCoverView : UIView
 
+@property (nonatomic, copy) void (^playVideoBlock)(UIButton *);
+
 - (void)showView;
 
 @end

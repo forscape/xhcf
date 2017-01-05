@@ -19,7 +19,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 132, self.frame.size.width, 50)];
+        UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 112, self.frame.size.width, 50)];
         titleLabel.textAlignment = NSTextAlignmentCenter;
         titleLabel.numberOfLines = 0;
         titleLabel.text = @"长城宏盛两全保险 \n (分红型)";
@@ -28,7 +28,7 @@
         self.titleLabel = titleLabel;
         [self addSubview:self.titleLabel];
         
-        UILabel *fitPeopleTagLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 240, self.frame.size.width / 2, 30)];
+        UILabel *fitPeopleTagLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 200, self.frame.size.width / 2, 30)];
         fitPeopleTagLabel.textAlignment = NSTextAlignmentCenter;
         fitPeopleTagLabel.text = @"适用人群";
         fitPeopleTagLabel.textColor = [UIColor colorWithHexString:@"0x666666"];
@@ -36,7 +36,7 @@
         self.fitPeopTagLabel = fitPeopleTagLabel;
         [self addSubview:self.fitPeopTagLabel];
         
-        UILabel *priceTagLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.width / 2, 240, self.frame.size.width / 2, 30)];
+        UILabel *priceTagLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.width / 2, 200, self.frame.size.width / 2, 30)];
         priceTagLabel.textAlignment = NSTextAlignmentCenter;
         priceTagLabel.text = @"参考保费";
         priceTagLabel.textColor = [UIColor colorWithHexString:@"0x666666"];
@@ -44,7 +44,7 @@
         self.priceLabel = priceTagLabel;
         [self addSubview:self.priceLabel];
         
-        UILabel *fitPeopleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 270, self.frame.size.width / 2, 30)];
+        UILabel *fitPeopleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 230, self.frame.size.width / 2, 30)];
         fitPeopleLabel.textAlignment = NSTextAlignmentCenter;
         fitPeopleLabel.text = @"30天-60岁";
         fitPeopleLabel.textColor = [UIColor colorWithHexString:@"0x333333"];
@@ -52,7 +52,7 @@
         self.fitPeopleLabel = fitPeopleLabel;
         [self addSubview:self.fitPeopleLabel];
         
-        UILabel *priceLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.width / 2, 270, self.frame.size.width / 2, 30)];
+        UILabel *priceLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.width / 2, 230, self.frame.size.width / 2, 30)];
         priceLabel.textAlignment = NSTextAlignmentCenter;
         priceLabel.text = @"1229元 / 年起";
         priceLabel.textColor = [UIColor colorWithHexString:@"0xff5622"];
@@ -60,7 +60,7 @@
         self.priceLabel = priceLabel;
         [self addSubview:self.priceLabel];
         
-        UILabel *tipLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 330, self.frame.size.width, 50)];
+        UILabel *tipLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 280, self.frame.size.width, 50)];
         tipLabel.textAlignment = NSTextAlignmentCenter;
         tipLabel.text = @"保障范围：适用于30-60岁的购买";
         tipLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12];
