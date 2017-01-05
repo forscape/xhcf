@@ -27,6 +27,7 @@
 		980871731E1CC30A00FE43DA /* safe_online@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 980871711E1CC30A00FE43DA /* safe_online@3x.png */; };
 		980871761E1CD36400FE43DA /* XHCFCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 980871751E1CD36400FE43DA /* XHCFCoverView.m */; };
 		980871791E1CF0DC00FE43DA /* InsuranceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 980871781E1CF0DC00FE43DA /* InsuranceView.m */; };
+		980871821E1DE3F100FE43DA /* FundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 980871811E1DE3F100FE43DA /* FundView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,8 @@
 		980871751E1CD36400FE43DA /* XHCFCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHCFCoverView.m; sourceTree = "<group>"; };
 		980871771E1CF0DC00FE43DA /* InsuranceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsuranceView.h; sourceTree = "<group>"; };
 		980871781E1CF0DC00FE43DA /* InsuranceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsuranceView.m; sourceTree = "<group>"; };
+		980871801E1DE3F100FE43DA /* FundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundView.h; sourceTree = "<group>"; };
+		980871811E1DE3F100FE43DA /* FundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 				980871751E1CD36400FE43DA /* XHCFCoverView.m */,
 				980871771E1CF0DC00FE43DA /* InsuranceView.h */,
 				980871781E1CF0DC00FE43DA /* InsuranceView.m */,
+				980871801E1DE3F100FE43DA /* FundView.h */,
+				980871811E1DE3F100FE43DA /* FundView.m */,
 			);
 			path = xhcf;
 			sourceTree = "<group>";
@@ -339,6 +344,7 @@
 				980871681E1C956300FE43DA /* ProductCell.m in Sources */,
 				980871211E1B857000FE43DA /* AppDelegate.m in Sources */,
 				9808711E1E1B857000FE43DA /* main.m in Sources */,
+				980871821E1DE3F100FE43DA /* FundView.m in Sources */,
 				980871791E1CF0DC00FE43DA /* InsuranceView.m in Sources */,
 				9808715D1E1BA0D200FE43DA /* ProductNewsViewController.m in Sources */,
 				980871601E1C86F200FE43DA /* UIColor+Hex.m in Sources */,

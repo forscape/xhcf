@@ -7,9 +7,12 @@
 //
 
 #import "XHCFCoverView.h"
+#import "InsuranceView.h"
+#import "FundView.h"
+
 @interface XHCFCoverView()
 @property (nonatomic, strong) UIImageView *bgImageView;
-@property (nonatomic, strong) UIView *contentView;
+@property (nonatomic, strong) InsuranceView *contentView;
 @end
 @implementation XHCFCoverView
 
@@ -30,8 +33,10 @@
     self.bgImageView.center = self.center;
     [self addSubview:self.bgImageView];
     
-    self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, image.size.width, image.size.height)];
-    self.contentView.backgroundColor = [UIColor whiteColor];
+//    self.contentView = [[InsuranceView alloc] initWithFrame:CGRectMake(0, 0, image.size.width, image.size.height)];
+    self.contentView = [[FundView alloc] initWithFrame:CGRectMake(0, 0, image.size.width, image.size.height)];
+//    self.contentView.center = self.center;
+    self.contentView.backgroundColor = [UIColor clearColor];
     [self.bgImageView addSubview:self.contentView];
     
 }
